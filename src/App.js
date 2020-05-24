@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 import Header from './components/Header'
-import Navbar from './components/Navbar'
-import Tab from './components/Tab'
+import ControlPanel from './containers/ControlPanel'
 
 class App extends Component {
   render () {
     return (
-      <div className='bg-lightest-blue'>
-        <Header />
-        <Navbar />
+      <div className='flex flex-column auto'>
+        <div className='bg-lightest-blue'>
+          <Header />
+        </div>
+        <ControlPanel />
       </div>
     )
   }
